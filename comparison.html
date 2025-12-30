@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏆 AI Landing Page Competition - Side by Side Comparison</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #fff; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; text-align: center; }
+        .header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .header p { opacity: 0.9; font-size: 1.1rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; padding: 20px; }
+        .card { background: #1a1a1a; border-radius: 12px; overflow: hidden; border: 2px solid #333; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: #667eea; }
+        .card-header { padding: 15px; background: #222; display: flex; justify-content: space-between; align-items: center; }
+        .card-title { font-size: 1.2rem; font-weight: bold; }
+        .card-score { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 5px 15px; border-radius: 20px; font-weight: bold; }
+        .card-frame { width: 100%; height: 600px; border: none; background: #fff; }
+        .medal { font-size: 1.5rem; }
+        .links { padding: 15px; background: #161616; }
+        .btn { display: inline-block; padding: 8px 16px; background: #667eea; color: #fff; text-decoration: none; border-radius: 6px; margin: 5px; font-size: 0.9rem; }
+        .btn:hover { background: #764ba2; }
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏆 AI Landing Page Competition</h1>
+        <p>6 AI Platforms • 1 Challenge • Side-by-Side Comparison</p>
+    </div>
+    
+    <div class="grid">
+        <!-- Perplexity AI - Winner -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="medal">🥇</span>
+                    <span class="card-title">Perplexity AI</span>
+                </div>
+                <span class="card-score">98/100</span>
+            </div>
+            <iframe class="card-frame" src="https://www.perplexity.ai/apps/1ef609ea-133c-4132-9d05-6a79a357fcd7" title="Perplexity AI"></iframe>
+            <div class="links">
+                <a href="https://www.perplexity.ai/apps/1ef609ea-133c-4132-9d05-6a79a357fcd7" target="_blank" class="btn">🔗 Open Full Demo</a>
+                <span style="opacity: 0.7; margin-left: 10px;">WebGL particles + 3D depth</span>
+            </div>
+        </div>
+
+        <!-- ChatGPT -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="medal">🥈</span>
+                    <span class="card-title">ChatGPT</span>
+                </div>
+                <span class="card-score">96/100</span>
+            </div>
+            <div class="card-frame" style="padding: 20px; overflow-y: auto;">
+                <p style="color: #333;">ChatGPT's landing page features stunning animations and glassmorphism effects. Visit the AI chat to get the full HTML code.</p>
+                <a href="https://chatgpt.com/c/6953057b-9ccc-832b-bfb0-56789264ee01" target="_blank" style="color: #667eea;">→ Open ChatGPT Tab</a>
+            </div>
+            <div class="links">
+                <span style="opacity: 0.7;">Canvas animations + scroll reveals</span>
+            </div>
+        </div>
+
+        <!-- Gemini -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="medal">🥉</span>
+                    <span class="card-title">Google Gemini</span>
+                </div>
+                <span class="card-score">95/100</span>
+            </div>
+            <div class="card-frame" style="padding: 20px; overflow-y: auto;">
+                <p style="color: #333;">Gemini's design features beautiful gradient systems and strong visual hierarchy. Access the full code from the Gemini tab.</p>
+                <a href="https://gemini.google.com/u/1/app/4f7a77e239e050b3" target="_blank" style="color: #667eea;">→ Open Gemini Tab</a>
+            </div>
+            <div class="links">
+                <span style="opacity: 0.7;">Gradient system + glassmorphism</span>
+            </div>
+        </div>
+
+        <!-- Qwen -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="card-title">Qwen</span>
+                </div>
+                <span class="card-score">94/100</span>
+            </div>
+            <iframe class="card-frame" src="https://chat.qwen.ai/s/deploy/t_fe23137b-222f-478a-8ac5-428b0e4253b3" title="Qwen"></iframe>
+            <div class="links">
+                <a href="https://chat.qwen.ai/s/deploy/t_fe23137b-222f-478a-8ac5-428b0e4253b3" target="_blank" class="btn">🔗 Open Full Demo</a>
+                <span style="opacity: 0.7; margin-left: 10px;">Professional polish + solid implementation</span>
+            </div>
+        </div>
+
+        <!-- Grok -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="card-title">Grok (xAI)</span>
+                </div>
+                <span class="card-score">92/100</span>
+            </div>
+            <div class="card-frame" style="padding: 20px; overflow-y: auto;">
+                <p style="color: #333;">Grok's implementation features Three.js + Matter.js integration with quantum creative theming. Get the code from the Grok tab.</p>
+                <a href="https://grok.com/c/338624fa-fb46-4251-bcd5-68588c760fd7" target="_blank" style="color: #667eea;">→ Open Grok Tab</a>
+            </div>
+            <div class="links">
+                <span style="opacity: 0.7;">Three.js 3D + Matter.js physics</span>
+            </div>
+        </div>
+
+        <!-- Monica -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="card-title">Monica</span>
+                </div>
+                <span class="card-score">90/100</span>
+            </div>
+            <div class="card-frame" style="padding: 20px; overflow-y: auto;">
+                <p style="color: #333;">Monica's systematic approach delivers comprehensive features and detailed content. Access the implementation from the Monica tab.</p>
+                <a href="https://monica.im/home/chat/Monica/monica" target="_blank" style="color: #667eea;">→ Open Monica Tab</a>
+            </div>
+            <div class="links">
+                <span style="opacity: 0.7;">Dual-phase systematic approach</span>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding: 40px; text-align: center; background: #111;">
+        <h2 style="margin-bottom: 20px;">📊 Competition Resources</h2>
+        <a href="https://docs.google.com/document/d/1fZc6FMNAJ1FTp7f5yd_BgtbAOw1pmfFbDIm6tkVIzag/edit" target="_blank" class="btn">📝 Complete Code Collection</a>
+        <a href="https://docs.google.com/presentation/d/1b7znVyH_jpJIEg0ojiSrQ7PdedMVkUUzIbhB0Ndb67o/edit" target="_blank" class="btn">🎯 Visual Analysis Slides</a>
+        <a href="https://github.com/AuraquanTech/ai-landing-page-competition" target="_blank" class="btn">🚀 GitHub Repository</a>
+    </div>
+</body>
+</html>
